@@ -58,31 +58,31 @@
 @font-face {
 	font-family: "Acumin-Pro";
 	font-weight: 400;
-	src: url("https://lesperesnature.com/wp-content/themes/peres-nature/assets/fonts/AcuminPro-Regular.woff2") format("woff2"), url("https://lesperesnature.com/wp-content/themes/peres-nature/assets/fonts/AcuminPro-Regular.woff") format("woff")
+	src: url("/webfonts/AcuminPro-Regular.woff2") format("woff2"), url("/webfonts/AcuminPro-Regular.woff") format("woff")
 }
 
 @font-face {
 	font-family: "Acumin-Pro";
 	font-weight: 700;
-	src: url("https://lesperesnature.com/wp-content/themes/peres-nature/assets/fonts/AcuminPro-Bold.woff2") format("woff2"), url("https://lesperesnature.com/wp-content/themes/peres-nature/assets/fonts/AcuminPro-Bold.woff") format("woff")
+	src: url("/webfonts/AcuminPro-Bold.woff2") format("woff2"), url("/webfonts/AcuminPro-Bold.woff") format("woff")
 }
 
 @font-face {
 	font-family: "Dragon-Serial";
 	font-weight: 400;
-	src: url("https://lesperesnature.com/wp-content/themes/peres-nature/assets/fonts/Dragon-Serial-Regular.woff2") format("woff2"), url("https://lesperesnature.com/wp-content/themes/peres-nature/assets/fonts/Dragon-Serial-Regular.woff") format("woff")
+	src: url("/webfonts/Dragon-Serial-Regular.woff2") format("woff2"), url("/webfonts/Dragon-Serial-Regular.woff") format("woff")
 }
 
 @font-face {
 	font-family: "Dragon-Serial";
 	font-weight: 700;
-	src: url("https://lesperesnature.com/wp-content/themes/peres-nature/assets/fonts/Dragon-Serial-Bold.woff2") format("woff2"), url("https://lesperesnature.com/wp-content/themes/peres-nature/assets/fonts/Dragon-Serial-Bold.woff") format("woff")
+	src: url("/webfonts/Dragon-Serial-Bold.woff2") format("woff2"), url("/webfonts/Dragon-Serial-Bold.woff") format("woff")
 }
 
 @font-face {
 	font-family: "Acumin-Pro-Condensed";
 	font-weight: 400;
-	src: url("https://lesperesnature.com/wp-content/themes/peres-nature/assets/fonts/AcuminProExtraCond-Regular.woff2") format("woff2"), url("https://lesperesnature.com/wp-content/themes/peres-nature/assets/fonts/AcuminProExtraCond-Regular.woff") format("woff")
+	src: url("/webfonts/AcuminProExtraCond-Regular.woff2") format("woff2"), url("/webfonts/AcuminProExtraCond-Regular.woff") format("woff")
 }
 	a{
      -webkit-transition: all .2s cubic-bezier(.785,.135,.15,.86) !important;
@@ -93,7 +93,7 @@
 body{
 background:#000000;
 color:#FFFFFF;
-font-family: "Dragon-Serial", sans-serif;
+font-family: "Acumin-Pro", sans-serif;
 font-size:16px;
 font-weight: normal;
 font-style: normal;
@@ -154,7 +154,7 @@ font-size:8em;
 letter-spacing:0px;
     position:relative;
 color:#000000;
-    font-family: "Cantora One", sans-serif;
+    font-family: "Dragon-Serial", sans-serif;
         
     background-image: -webkit-gradient(linear, left top, right top, from(#2d9ee0), to(#8bdcf7));
     background-image: linear-gradient(
@@ -246,6 +246,7 @@ position:relative;
 .section-title{
 font-size:4em;
 font-weight:700;
+font-family: "Dragon-Serial", sans-serif;
     /*
 font-family:'Teko';
 text-shadow: 10px #2C174F;
@@ -308,6 +309,7 @@ padding-top:0 !important;
 border-radius:1em;
 max-width:480px;
 background:#819B57;
+    box-shadow: inset rgba(0, 0, 0, 0.125) 0px 5px 10px;
 }
 
 .features-container .tax-title{
@@ -322,10 +324,11 @@ font-weight:700;
     
 .features-container .tax-title-2{
 color: #FFFFFF;
-font-size: 1.5em;
+font-size: 2em;
 font-weight: 700;
-letter-spacing: 0;
+letter-spacing: 0.125em;
 line-height: 1;
+ font-family: "Acumin-Pro-Condensed", sans-serif;
 }
     
 .features-container .tax-description{
@@ -357,29 +360,38 @@ color:#FFFFFF;
 .tokenomics-container .tokenomics-description{
 }
 
+.tokenomics-container h3{
+font-size:3em;
+font-weight: 700;
+   font-family: "Dragon-Serial", sans-serif;
+    color:#FFFFFF
+}
+
 .tokenomics-container .tax-card{
- border:1px solid #2d9ee0;
-border-radius:0px;
+ border:1px solid #152B0E;
+border-radius:1em;
 max-width:480px;
-background:rgba(0,0,0,0.5);
+background:#152B0E;
+     box-shadow: inset rgba(0, 0, 0, 0.125) 0px 5px 10px;
 }
 
 .tokenomics-container .tax-title{
-color: transparent;
+color:#FFFFFF;
 font-weight: 600;
 line-height: 0.85;
--webkit-text-stroke-width: 1px;
+-webkit-text-stroke-width: 0px;
 -webkit-text-stroke-color: #2d9ee0;
 font-size:5em;
 font-weight:700;
 }
     
 .tokenomics-container .tax-title-2{
-color: #2d9ee0;
-font-size: 1.5em;
+color: #FFFFFF;
+font-size: 2em;
 font-weight: 700;
-letter-spacing: 0;
+letter-spacing: 0.125em;
 line-height: 1;
+ font-family: "Acumin-Pro-Condensed", sans-serif;
 }
     
 .tokenomics-container .tax-description{
@@ -787,25 +799,23 @@ Users of the $EcoChain Token will be able to select where the tree from their mo
                     </div>
 </div>
 <div class="row mb-4">
-<h3 class="text-center mb-4 aos-init aos-animate" style="font-size:3em;font-weight: 700;
-    font-family: 'Teko';
-    color:#FFFFFF" data-aos="fade">BUY TAX 9%</h3>
+<h3 class="text-center mb-4 aos-init" data-aos="fade">BUY TAX 9%</h3>
 
 
 
 <div class="col-12 col-lg-4 mb-4">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init aos-animate" data-aos="fade">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init" data-aos="fade">
 <span class="tax-title text-center mb-3">5%</span>
 <span class="tax-title-2 text-center mb-3">Marketing</span><span class="tax-description text-center">5% of every transaction is taken and will be used for enhancements, operations, and marketing of the project.</span>
 </div>
 </div><div class="col-12 col-lg-4 mb-4">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init aos-animate" data-aos="fade">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init" data-aos="fade">
 <span class="tax-title text-center mb-3">2%</span>
 <span class="tax-title-2 text-center mb-3">Development</span><span class="tax-description text-center">2% of every transaction is taken and will be used to for the development of Kirito Ecosystem.</span>
 </div>
 </div>
 <div class="col-12 col-lg-4 mb-4">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init aos-animate" data-aos="fade">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init" data-aos="fade">
 <span class="tax-title text-center mb-3">2%</span>
 <span class="tax-title-2 text-center mb-3">Liquidity Pool</span><span class="tax-description text-center">2% of every transaction is transformed into liquidity. It's automatic and helps create a price floor.</span>
 </div>
@@ -815,25 +825,23 @@ Users of the $EcoChain Token will be able to select where the tree from their mo
 </div>
 
 <div class="row mb-5">
-<h3 class="text-center mb-4 aos-init aos-animate" style="font-size:3em;font-weight: 700;
-    font-family: 'Teko';
-    color:#FFFFFF" data-aos="fade">SELL TAX 9%</h3>
+<h3 class="text-center mb-4 aos-init" data-aos="fade">SELL TAX 9%</h3>
 
 
 
 <div class="col-12 col-lg-4 mb-4">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init aos-animate" data-aos="fade">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init" data-aos="fade">
 <span class="tax-title text-center mb-3">5%</span>
 <span class="tax-title-2 text-center mb-3">Marketing</span><span class="tax-description text-center">5% of every transaction is taken and will be used for enhancements, operations, and marketing of the project.</span>
 </div>
 </div><div class="col-12 col-lg-4 mb-4">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init aos-animate" data-aos="fade">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init" data-aos="fade">
 <span class="tax-title text-center mb-3">2%</span>
 <span class="tax-title-2 text-center mb-3">Development</span><span class="tax-description text-center">2% of every transaction is taken and will be used to for the development of Kirito Ecosystem.</span>
 </div>
 </div>
 <div class="col-12 col-lg-4 mb-4">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init aos-animate" data-aos="fade">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init" data-aos="fade">
 <span class="tax-title text-center mb-3">2%</span>
 <span class="tax-title-2 text-center mb-3">Liquidity Pool</span><span class="tax-description text-center">2% of every transaction is transformed into liquidity. It's automatic and helps create a price floor.</span>
 </div>
@@ -847,11 +855,11 @@ Users of the $EcoChain Token will be able to select where the tree from their mo
 
 
 <section id="roadmap" class="section roadmap-section"><svg class="wavy-border" width="1640" height="110" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1640 110" preserveAspectRatio="xMinYMax meet"><path d="M490.138 14.44c328.547 3.671 405.193 88.521 714.616 88.972 309.342.45 435.18-50.673 435.247-50.7L1640 110H0V52.71s161.591-41.941 490.138-38.27z"></path></svg>
-<div class="section-container roadmap-container container py-5 aos-init aos-animate" data-aos="fade">
+<div class="section-container roadmap-container container py-5 aos-init" data-aos="fade">
 <div class="text-center">
-<h2 class="section-title roadmap-title mt-4 aos-init aos-animate" data-aos="fade" style="color:#FFFFFF">ROADMAP</h2>
+<h2 class="section-title roadmap-title mt-4 aos-init" data-aos="fade" style="color:#FFFFFF">ROADMAP</h2>
 <div class="row mt-4 mb-5">
-<div class="col-12 col-lg-4 text-center py-3 aos-init aos-animate" data-aos="fade">
+<div class="col-12 col-lg-4 text-center py-3 aos-init" data-aos="fade">
 <h4 style="color:#2d9ee0">Q2 2022</h4>
 <ul class="list-unstyled text-small text-center mt-3">
 <li>EcoChain Team Building<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#2d9ee0" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
@@ -865,7 +873,7 @@ Users of the $EcoChain Token will be able to select where the tree from their mo
 
 </ul>
 </div>
-<div class="col-12 col-lg-4 text-center py-3 aos-init aos-animate" data-aos="fade">
+<div class="col-12 col-lg-4 text-center py-3 aos-init" data-aos="fade">
 <h4 style="color:#2d9ee0">Q3 2022</h4>
 <ul class="list-unstyled text-small text-center mt-3">
 <li>EcoVerse Launch</li>
@@ -875,7 +883,7 @@ Users of the $EcoChain Token will be able to select where the tree from their mo
 <li>EcoChain Metaverse</li><li>NFT Development and Update</li>
 </ul>
 </div>
-<div class="col-12 col-lg-4 text-center py-3 aos-init aos-animate" data-aos="fade">
+<div class="col-12 col-lg-4 text-center py-3 aos-init" data-aos="fade">
 <h4 style="color:#2d9ee0">Q4 2022</h4>
 <ul class="list-unstyled text-small text-center mt-3">
 <li>Funding Potential Green Projects</li>
